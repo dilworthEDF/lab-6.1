@@ -7,4 +7,4 @@ ENV MYSQL_ROOT_PASSWORD=password MYSQL_DATABASE=flask-db
 # Add the content of the .sql file to your image
 # All scripts copied to docker-entrypoint-initdb.d/ are automatically
 # executed during container startup
-COPY creatTable.sql /docker-entrypoint-initdb.d/
+COPY createTable.sql /docker-entrypoint-initdb.d/
