@@ -19,7 +19,7 @@ pipeline {
             steps{
                 sh "echo \$DOCKERHUB_CREDENTIALS_PSW | docker login -u \$DOCKERHUB_CREDENTIALS_USR --password-stdin"
                 sh "docker tag lab-6-mysql:5.7 dilworth10/lab-6-sql1:latest"
-                sh "docker tag lab-6-flask-app:5.7 dilworth10/lab-6-flask-app:latest"
+                sh "docker tag lab-6-flask-app: dilworth10/lab-6-flask-app:latest"
                 sh "docker push dilworth10/lab-6-sql1:latest"
                 sh "docker push dilworth10/lab-6sql1:latest"
             }
